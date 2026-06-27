@@ -876,3 +876,15 @@ ul {
     margin-left: 4px;
   }
 }
+@media (max-width: 939px) {
+  .nav-menu {
+    padding: 18px 24px;
+    text-align: left;
+    justify-items: start;
+  }
+
+  .nav-menu a {
+    padding: 12px 8px;
+    width: 100%;
+  }
+}
