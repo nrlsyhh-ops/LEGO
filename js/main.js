@@ -48,7 +48,6 @@ if ('IntersectionObserver' in window) {
   revealItems.forEach((item) => item.classList.add('is-visible'));
 }
 
-
 const navSearchButton = document.querySelector('.icon-button--search');
 const wishlistButton = document.querySelector('.icon-button[aria-label="Wishlist"]');
 const shoppingBagButton = document.querySelector('.icon-button[aria-label="Shopping bag"]');
@@ -56,6 +55,7 @@ const shoppingBagButton = document.querySelector('.icon-button[aria-label="Shopp
 const popupOverlay = document.createElement('div');
 popupOverlay.className = 'action-popup-overlay';
 popupOverlay.setAttribute('aria-hidden', 'true');
+
 popupOverlay.innerHTML = `
   <div class="action-popup" role="dialog" aria-modal="true" aria-labelledby="action-popup-title">
     <div class="action-popup__header">
@@ -82,20 +82,31 @@ const openPopup = (title, bodyHtml) => {
   popupBody.innerHTML = bodyHtml;
   popupOverlay.classList.add('is-open');
   popupOverlay.setAttribute('aria-hidden', 'false');
-  popupClose.focus();
 
   const searchInput = popupBody.querySelector('input');
-  if (searchInput) searchInput.focus();
+  if (searchInput) {
+    searchInput.focus();
+  } else {
+    popupClose.focus();
+  }
 };
 
 navSearchButton?.addEventListener('click', (event) => {
   event.preventDefault();
+
   openPopup(
     'Search products',
-    `<form class="action-popup__search" role="search">
-      <input type="search" name="product-search" placeholder="Search LEGO products..." aria-label="Search LEGO products" />
-      <button type="submit">Search</button>
-    </form>`
+    `
+      <form class="action-popup__search" role="search">
+        <input
+          type="search"
+          name="product-search"
+          placeholder="Search LEGO products..."
+          aria-label="Search LEGO products"
+        />
+        <button type="submit">Search</button>
+      </form>
+    `
   );
 });
 
