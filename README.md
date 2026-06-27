@@ -11,10 +11,10 @@ The landing page is designed to showcase a clean, modern, and responsive interfa
 * Responsive mobile-first layout
 * Sticky navigation bar
 * Mobile hamburger menu
-* Search button with popup search bar
+* Search button with a pop-up search bar
 * Favourite button with empty favourite popup message
 * Shopping bag button with empty bag popup message
-* Animated LEGO man graphic with fade in and fade out effect
+* Animated LEGO man graphic with fade-in and fade-out effect
 * Footer section with linked LEGO pages
 * Social media footer buttons
 * Smooth scroll and reveal animation effects
@@ -51,7 +51,7 @@ lego-landing-page
 
 or 
 
-You can access it through my link here : 
+You can access it through my link here : https://nrlsyhh-ops.github.io/LEGO/
 
 ## Responsive Design
 
@@ -69,7 +69,7 @@ The website includes simple JavaScript interactions such as:
 
 ## Author
 
-Nurul Aiesyah Fatihah Binti Norazehasram 
+Nurul Aiesyah Fatihah 
 nurulaiesyahfatihah@gmail.com
 
 ## Purpose
