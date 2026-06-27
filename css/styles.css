@@ -838,3 +838,41 @@ ul {
 .social-links a span {
   line-height: 1;
 }
+
+
+@media (max-width: 767px) {
+  .nav {
+    gap: 8px;
+  }
+
+  .brand img {
+    width: 44px;
+  }
+
+  .nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-left: auto;
+  }
+
+  .icon-button {
+    width: 30px;
+    height: 30px;
+  }
+
+  .icon-button img {
+    width: 16px;
+    max-height: 16px;
+  }
+
+  .icon-button--search img {
+    width: 24px;
+    max-height: 24px;
+  }
+
+  .nav-toggle {
+    width: 38px;
+    margin-left: 4px;
+  }
+}
