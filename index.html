@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A responsive LEGO-inspired landing page built with mobile-first HTML, CSS, and JavaScript."
+    />
+    <title>LEGO Landing Page</title>
+    <link rel="icon" type="image/jpeg" href="assets/images/lego-logo.jpg" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <header class="site-header" data-header>
+      <nav class="nav container" aria-label="Primary navigation">
+        <a class="brand" href="#home" aria-label="LEGO home">
+          <img src="assets/images/lego-logo.jpg" alt="LEGO logo" />
+        </a>
+
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-controls="primary-menu"
+          aria-expanded="false"
+          data-nav-toggle
+        >
+          <span class="sr-only">Open menu</span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </button>
+
+        <ul class="nav-menu" id="primary-menu" data-nav-menu>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#shop">Shop</a></li>
+          <li><a href="#discover">Discover</a></li>
+          <li><a href="#help">Help</a></li>
+          <li><a href="#sale">Sale</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+
+        <div class="nav-actions" aria-label="Quick actions">
+          <a class="icon-button icon-button--search" href="#shop" aria-label="Search">
+            <img src="assets/icons/search.png" alt="" />
+          </a>
+          <a class="icon-button" href="#discover" aria-label="Wishlist">
+            <img src="assets/icons/heart.png" alt="" />
+          </a>
+          <a class="icon-button" href="#shop" aria-label="Shopping bag">
+            <img src="assets/icons/shopping-bag.png" alt="" />
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <span id="sale" class="anchor-target" aria-hidden="true"></span>
+      <section class="hero" id="home" aria-labelledby="hero-title">
+        <div class="container hero__content reveal">
+          <h1 id="hero-title">What's on sale?</h1>
+          <p>Save on gifts for next year with our end-of-year sale now</p>
+          <a class="button" href="#shop">
+            <span>Shop now</span>
+            <svg aria-hidden="true" viewBox="0 0 24 24">
+              <path d="M9.2 5.4 15.8 12l-6.6 6.6" />
+            </svg>
+          </a>
+        </div>
+      </section>
+
+      <section class="impact section-space" id="discover" aria-labelledby="impact-title">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p>
+              At the LEGO Group, we're playing our part in building a sustainable future and
+              creating a better world for our children to inherit. Find out how we're joining
+              forces with others to have a lasting impact and inspire the children of today to
+              become the builders of tomorrow.
+            </p>
+          </div>
+
+          <div class="card-grid" id="shop">
+            <article class="impact-card reveal">
+              <a href="#children" aria-label="Read more about Children">
+                <img src="assets/images/children.png" alt="Three friendly brick characters sharing a white block" />
+              </a>
+              <div class="impact-card__body" id="children">
+                <h3>Children</h3>
+                <p>
+                  We believe every child should have an opportunity to achieve their potential.
+                  Learning through play is a powerful way to develop skills that will allow
+                  children to tackle challenges that lie ahead.
+                </p>
+                <a class="text-link" href="#children">Read more <span aria-hidden="true">›</span></a>
+              </div>
+            </article>
+
+            <article class="impact-card reveal">
+              <a href="#environment" aria-label="Read more about Environment">
+                <img src="assets/images/environment.png" alt="A smiling white brick floating on a blue background" />
+              </a>
+              <div class="impact-card__body" id="environment">
+                <h3>Environment</h3>
+                <p>
+                  We are committed to protecting the environment and the planet our children
+                  will inherit. It's not enough to just reduce our impact on the environment,
+                  we want to go further and have a positive impact.
+                </p>
+                <a class="text-link" href="#environment">Read more <span aria-hidden="true">›</span></a>
+              </div>
+            </article>
+
+            <article class="impact-card reveal">
+              <a href="#people" aria-label="Read more about People">
+                <img src="assets/images/people.png" alt="Two colourful brick characters holding hands" />
+              </a>
+              <div class="impact-card__body" id="people">
+                <h3>People</h3>
+                <p>
+                  We value the people, partners and suppliers who make LEGO® play experiences
+                  possible and we work hard to make our workplaces inclusive, safe and motivating.
+                </p>
+                <a class="text-link" href="#people">Read more <span aria-hidden="true">›</span></a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="about">
+      <div class="container footer-grid">
+        <div class="footer-brand reveal">
+          <a href="#home" aria-label="Back to top">
+            <img src="assets/images/lego-logo.jpg" alt="LEGO logo" />
+          </a>
+          <a class="country-chip" href="#help" aria-label="Change country to Malaysia">
+            <svg aria-hidden="true" viewBox="0 0 24 24">
+              <path d="M12 21s7-5.1 7-11a7 7 0 1 0-14 0c0 5.9 7 11 7 11Z" />
+              <circle cx="12" cy="10" r="2.4" />
+            </svg>
+            Malaysia
+          </a>
+          <ul>
+            <li><a href="https://www.lego.com/en-mx/lego-set-inspiration">Find inspiration</a></li>
+            <li><a href="https://www.lego.com/themes/brand-catalogue">LEGO Catalogues</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column reveal">
+          <h2>About Us</h2>
+          <ul>
+            <li><a href="https://www.lego.com/en-my/aboutus">About the LEGO Group</a></li>
+            <li><a href="https://www.lego.com/en-my/aboutus/news-room">LEGO® news</a></li>
+            <li><a href="https://www.lego.com/en-my/sustainability">Sustainability</a></li>
+            <li><a href="#about">Supply chain transparency statement</a></li>
+            <li><a href="https://www.lego.com/en-my/aboutus/lego-group/product-safety">LEGO product certification</a></li>
+            <li><a href="https://www.lego.com/en-my/careers">LEGO Jobs</a></li>
+            <li><a href="https://www.lego.com/compliance-line">LEGO Compliance Line</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column reveal" id="help">
+          <h2>Support</h2>
+          <ul>
+            <li><a href="https://www.lego.com/en-my/service">Contact us</a></li>
+            <li><a href="https://www.lego.com/en-my/service/buildinginstructions">Find building instructions</a></li>
+            <li><a href="https://www.lego.com/en-my/service/replacement-parts">Replacement parts</a></li>
+            <li><a href="https://www.lego.com/page/shipping-handling">Deliveries and returns</a></li>
+            <li><a href="https://www.lego.com/page/payment-methods">Payment methods</a></li>
+            <li><a href="https://www.lego.com/page/terms-and-conditions">Terms &amp; Conditions</a></li>
+            <li><a href="https://www.lego.com/en-my/service/product-recalls">Product recalls</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column reveal">
+          <h2>Attractions</h2>
+          <ul>
+            <li><a href="https://www.lego.com/en-my/attractions#blt281a0fddfffea922">LEGO® House</a></li>
+            <li><a href="https://www.lego.com/en-my/attractions#blt2d039b65946ba98d">LEGOLAND® Parks</a></li>
+            <li><a href="https://www.lego.com/en-my/attractions#blt7819df81c4e1b774">LEGOLAND Discovery Centers</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column reveal">
+          <h2>More from us</h2>
+          <ul>
+            <li><a href="https://www.lego.com/en-my/magazine">LEGO® LIFE</a></li>
+            <li><a href="http://education.lego.com/en-my">LEGO Education</a></li>
+            <li><a href="https://ideas.lego.com/">LEGO Ideas</a></li>
+            <li><a href="https://learningthroughplay.com/">LEGO Foundation</a></li>
+            <li><a href="https://www.legobraillebricks.com/">LEGO® Braille Bricks</a></li>
+          </ul>
+        </div>
+
+        <div class="social reveal" aria-label="Social links">
+          <h2>Follow us</h2>
+          <div class="social-links">
+            <a href="https://www.facebook.com/LEGO/" aria-label="Facebook">
+              <span aria-hidden="true">f</span>
+            </a>
+            <a href="https://x.com/LEGO_Group" aria-label="X">
+              <span aria-hidden="true">𝕏</span>
+            </a>
+            <a href="https://www.instagram.com/lego" aria-label="Instagram">
+              <svg aria-hidden="true" viewBox="0 0 24 24">
+                <rect x="5" y="5" width="14" height="14" rx="4"></rect>
+                <circle cx="12" cy="12" r="3.2"></circle>
+                <circle cx="16.4" cy="7.6" r="0.9"></circle>
+              </svg>
+            </a>
+            <a href="https://m.youtube.com/user/LEGO" aria-label="YouTube">
+              <svg aria-hidden="true" viewBox="0 0 24 24">
+                <rect x="4" y="7" width="16" height="10" rx="3"></rect>
+                <path d="M10.3 9.7 15 12l-4.7 2.3Z"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/main.js" defer></script>
+  </body>
+</html>
