@@ -22,10 +22,10 @@ The landing page is designed to showcase a clean, modern, and responsive interfa
 
 ## Technologies Used
 
-* HTML5
-* CSS3
-* JavaScript
-* Responsive Web Design
+* HTML5 - notepad++
+* CSS3 - Sublime Text
+* JavaScript - Sublime Text
+* Responsive Web Design 
 
 ## Folder Structure
 
